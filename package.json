@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  },
+  "scripts": {
+    "watch:main" : "npx tailwindcss -i ./src/main.css -o ./assets/css/main.css --watch",
+    "watch:navigation" : "npx tailwindcss -i ./src/navigation.css -o ./assets/css/navigation.css --watch",
+    "build:main" : "npx tailwindcss -i ./src/main.css -o ./assets/css/main.css",
+    "build:navigation" : "npx tailwindcss -i ./src/navigation.css -o ./assets/css/navigation.css"
+  }
+}

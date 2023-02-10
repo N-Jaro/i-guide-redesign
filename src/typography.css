@@ -1,0 +1,26 @@
+/* Define the base style for headings  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+    @apply font-light text-base
+} */
+
+.page-content strong {
+    @apply font-semibold
+}
+
+.page-content h1,h2,h3,h4,h5 {
+    @apply font-semibold
+}
+.page-content h1 {
+    @apply  text-3xl
+}
+
+.page-content h2 {
+    @apply text-2xl
+}
+.page-content h3 {
+    @apply  text-xl
+}
