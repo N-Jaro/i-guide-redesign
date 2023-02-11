@@ -20,7 +20,8 @@ module.exports = {
         'ig-light-green': '#9ecda2', 
         'ig-orange': '#f18149',
         'ig-mustard': '#e7b52f', 
-        'ig-dark-blue': '#13284b'
+        'ig-dark-blue': '#13284b',
+        'ig-brown': '#544543'
       },
     },
     fontFamily: {

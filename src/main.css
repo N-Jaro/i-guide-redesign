@@ -36,10 +36,10 @@
 }
 
 .hero-section {
-    background-image: url('../css/BG.png');
+    background-image: url('./BG.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
 }
 
 .tab-content {
@@ -128,9 +128,9 @@
 
 
 
-/* The CSS for the diagonal separator of page header */
+/* The CSS for the diagonal separator of page template header */
 
-.custom-shape-divider-bottom-1675786129 {
+.page-title .custom-shape-divider-bottom-1675786129 {
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -140,7 +140,7 @@
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1675786129 svg {
+.page-title .custom-shape-divider-bottom-1675786129 svg {
     position: relative;
     display: block;
     width: calc(188% + 1.3px);
@@ -148,7 +148,32 @@
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1675786129 .shape-fill {
+.page-title .custom-shape-divider-bottom-1675786129 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/*  ----------------------------------------------------*/
+
+/* The CSS for the diagonal separator of home page header */
+
+.hero-section .custom-shape-divider-bottom-1676052306 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.hero-section .custom-shape-divider-bottom-1676052306 svg {
+    position: relative;
+    display: block;
+    width: calc(212% + 1.3px);
+    height: 150px;
+}
+
+.hero-section .custom-shape-divider-bottom-1676052306 .shape-fill {
     fill: #FFFFFF;
 }
 

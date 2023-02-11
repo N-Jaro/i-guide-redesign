@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;900&display=swap" rel="stylesheet">
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/navigation.css">
     <!-- <link rel="stylesheet" href="assets/css/typography.css"> -->
@@ -16,7 +18,7 @@
 </head>
 
 <body>
-    <nav id="navigation" class="ease-in duration-100 sticky top-0 z-50 text-white p-0 xl:px-20">
+    <nav id="navigation" class="sticky top-0 z-50 text-white p-0 xl:px-20">
         <div id="desktop-menu" class="hidden md:flex items-center justify-between flex-wrap bg-transparent h-[120px]">
             <div class="flex items-center flex-shrink-0 ml-3 md:ml-4 mr-6">
                 <img class="logo-color h-[56px] w-[115px] xl:p-0 xl:h-[80px] xl:w-[165px]"
@@ -44,21 +46,25 @@
                                     <li id="menu-item-129"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129">
                                         <a href="page.html">Convergence Science
-                                            Catalysts</a></li>
+                                            Catalysts</a>
+                                    </li>
                                     <li id="menu-item-124"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124">
                                         <a href="page.html">Geospatial Artificial Intelligence
                                             &amp;
-                                            Data Science</a></li>
+                                            Data Science</a>
+                                    </li>
                                     <li id="menu-item-128"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128">
                                         <a href="page.html">Core Cyberinfrastructure
                                             Capabilities
-                                            &amp; Services</a></li>
+                                            &amp; Services</a>
+                                    </li>
                                     <li id="menu-item-127"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127">
                                         <a href="page.html">Education &amp; Workforce
-                                            Development</a></li>
+                                            Development</a>
+                                    </li>
                                     <li id="menu-item-126"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126">
                                         <a href="page.html">Engagement &amp;
@@ -67,7 +73,8 @@
                                     <li id="menu-item-125"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125">
                                         <a href="page.html">Evaluation &amp; Knowledge
-                                            Transfer</a></li>
+                                            Transfer</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li id="menu-item-315"
@@ -108,21 +115,20 @@
                                     </li>
                                     <li id="menu-item-460"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460">
-                                        <a href="page.html">Webinars</a></li>
+                                        <a href="page.html">Webinars</a>
+                                    </li>
                                     <li id="menu-item-703"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-703">
                                         <a href="#">All-Hands Meetings</a>
                                         <ul class="sub-menu">
                                             <li id="menu-item-677"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-677">
-                                                <a
-                                                    href="page.html">I-GUIDE
+                                                <a href="page.html">I-GUIDE
                                                     AHM 2022 (Virtual)</a>
                                             </li>
                                             <li id="menu-item-830"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830">
-                                                <a
-                                                    href="page.html">I-GUIDE
+                                                <a href="page.html">I-GUIDE
                                                     AHM 2022 (In-person)</a>
                                             </li>
                                         </ul>
@@ -140,9 +146,9 @@
                                     </li>
                                     <li id="menu-item-1110"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110">
-                                        <a
-                                            href="page.html">AAG
-                                            2023</a></li>
+                                        <a href="page.html">AAG
+                                            2023</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li id="menu-item-696"
@@ -158,7 +164,8 @@
                             <li id="menu-item-1030"
                                 class="platform menu-item menu-item-type-post_type menu-item-object-page menu-item-1030">
                                 <a target="_blank" rel="noopener" href="page.html">I-GUIDE
-                                    Platform</a></li>
+                                    Platform</a>
+                            </li>
                             <li id="menu-item-1031"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a
                                     href="page.html">Resources
@@ -179,73 +186,129 @@
             </div>
         </div>
     </nav>
-    <div class="hero-section relative lg:pb-[150px] -mt-[200px] lg:pt-[200px] overflow-hidden">
-        <div class="w-full">
-            <div class="mt-12 flex gap-20 justify-center">
-                <div class="basis-1/3">
+    <div class="hero-section relative lg:pb-[100px] -mt-[200px] lg:pt-[200px] overflow-x-hidden">
+        <div class="w-full z-20 relative">
+            <div class="flex gap-20 justify-start">
+                <div class="w-1/3 mt-12">
                     <div class="pl-20">
-                        <h1 class="z-2 text-white text-[4vw] font-semibold md:mb-[-2vh] text-shadow"><span>Map.</span>
+                        <h1 class="z-2 text-[4vw] font-semibold md:mb-[-2vh] text-shadow">
+                            <div id="tabs-nav" class="text-white">
+                                <span id="map" link="#map-slide">Map. </span><br>
+                                <span id="connect" link="#connect-slide">Connect.</span><br>
+                                <span id="discover" link="#discover-slide">Discover.</span>
+                            </div>
                         </h1>
-                        <h1 class="z-2 text-white text-[4vw] font-semibold md:mb-[-2vh] text-shadow">
-                            <span>Connect.</span></h1>
-                        <h1 class="z-2 text-white text-[4vw] font-semibold md:mb-[-2vh] text-shadow">
-                            <span>Discover.</span></h1>
                         <p class="z-2 text-white text-[1.1vw] font-light tracking-wide leading-relaxed mt-5">I-GUIDE is
                             empowering diverse communities to produce data-intensive solutions to society’s resilience
                             and sustainability challenges.</p>
                     </div>
                 </div>
-                <div class="basis-2/3">
-                    <div class="grid grid-cols-7 gap-10 w-[110%]">
-                        <div
-                            class="col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
-                            <img src="assets/css/top1.png" alt="">
-                            <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
-                            </h1>
+                <div class="w-2/3">
+                    <div id="tabs-content">
+                        <div id="map-slide" class="hero-tab-content p-5 z-20">
+                            <div class="grid grid-cols-7 gap-10 w-[110%]">
+                                <div class="col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__fadeInRight animate__delay-2s">
+                                    <img src="assets/css/top1.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
+                                    </h1>
+                                </div>
+                                <div class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__fadeInRight animate__delay-3s">
+                                    <img src="assets/css/top2.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">The first in-person
+                                        I-GUIDE AHM!</h1>
+                                </div>
+                                <div class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__fadeInRight animate__delay-3s">
+                                    <img src="assets/css/top3.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-4">I-GUIDE All-Hands Meeting
+                                        (Virtual) </h1>
+                                </div>
+                                <div class="col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__fadeInRight animate__delay-4s">
+                                    <img src="assets/css/top1.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
-                        <div
-                            class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
-                            <img src="assets/css/top2.png" alt="">
-                            <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">The first in-person
-                                I-GUIDE AHM!</h1>
+                        <div id="connect-slide" class="hero-tab-content p-5 z-20">
+                            <div class="grid grid-cols-7 gap-10 w-[110%]">
+                                <div
+                                    class="col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    <img src="assets/css/top1.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">TESTs
+                                    </h1>
+                                </div>
+                                <div
+                                    class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    <img src="assets/css/top2.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">The first in-person
+                                        I-GUIDE AHM!</h1>
+                                </div>
+                                <div
+                                    class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    <img src="assets/css/top3.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-4">I-GUIDE All-Hands Meeting
+                                        (Virtual) </h1>
+                                </div>
+                                <div
+                                    class="col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    <img src="assets/css/top1.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
-                        <div
-                            class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
-                            <img src="assets/css/top3.png" alt="">
-                            <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-4">I-GUIDE All-Hands Meeting
-                                (Virtual) </h1>
-                        </div>
-                        <div
-                            class="col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
-                            <img src="assets/css/top1.png" alt="">
-                            <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
-                            </h1>
+                        <div id="discover-slide" class="hero-tab-content p-5 z-20">
+                            <div class="grid grid-cols-7 gap-10 w-[110%]">
+                                <div
+                                    class="col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    <img src="assets/css/top1.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">TEST 3
+                                    </h1>
+                                </div>
+                                <div
+                                    class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    <img src="assets/css/top2.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">The first in-person
+                                        I-GUIDE AHM!</h1>
+                                </div>
+                                <div
+                                    class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    <img src="assets/css/top3.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-4">I-GUIDE All-Hands Meeting
+                                        (Virtual) </h1>
+                                </div>
+                                <div
+                                    class="col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    <img src="assets/css/top1.png" alt="">
+                                    <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1676052306 z-10">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
         </div>
     </div>
 
 
     <div class="w-full px-20 hero  mt-12 flex gap-10 ">
         <div class="bg-gray-300 aspect-video basis-1/2 overflow-hidden rounded-lg">
-            <iframe id="kmsembed-1_ebqgma2n"
-                                width="100%" height="100%"
-                                src="https://mediaspace.illinois.edu/embed/secure/iframe/entryId/1_ebqgma2n/uiConfId/26883701"
-                                class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen
-                                allow="autoplay *; fullscreen *; encrypted-media *"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
-                                frameborder="0" title="Kaltura Player"
-                                ></iframe>
+            <!-- <iframe id="kmsembed-1_ebqgma2n" width="100%" height="100%"
+                src="https://mediaspace.illinois.edu/embed/secure/iframe/entryId/1_ebqgma2n/uiConfId/26883701"
+                class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen
+                allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade"
+                sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+                frameborder="0" title="Kaltura Player"></iframe> -->
         </div>
         <div class=" basis-1/2">
-            <h1 class="z-2 text-[4vw] font-semibold">
-                <span style="color: #807270;">We are </span> <span style="color: #0F5D9A;">I</span><span
-                    style="color: #807270;">-</span><span style="color: #31ABA4;">G</span><span
-                    style="color: #64863B;">U</span><span style="color: #A0D2A4;">I</span><span
-                    style="color: #F4824A;">D</span><span style="color: #EBBA3C;">E</span>
+            <h1 class="z-2 text-[4vw] ">
+                <span class="text-ig-brown">We are </span><span class="text-ig-blue font-black">I</span><span class="text-ig-brown font-black">-</span><span class="text-ig-teal font-black">G</span><span class="text-ig-olive font-black">U</span><span class="text-ig-light-green font-black">I</span><span class="text-ig-orange font-black">D</span><span class="text-ig-mustard font-black">E</span>
             </h1>
             <p class="z-2 text-[1vw] font-light tracking-wide mt-1">The National Science Foundation (NSF) Institute for
                 Geospatial Understanding through an Integrative Discovery Environment (I-GUIDE) integrates AI and
@@ -261,9 +324,11 @@
 
     </div>
     <div class="px-20 mt-20 flex">
-        <div class="w-3/4"> 
+        <div class="w-3/4">
             <h1 class="text-2xl font-semibold">Overcoming Scientific and Societal Challenges</h1>
-            <p class="text-[1vw] font-light  mt-5">Uniting Interdisciplinary Knowledge to Solve Real-World Problems! By fostering collaboration and providing access to advanced geospatial data capabilities, I-GUIDE is tackling fundamental scientific and societal challenges with innovative solutions.</p>
+            <p class="text-[1vw] font-light  mt-5">Uniting Interdisciplinary Knowledge to Solve Real-World Problems! By
+                fostering collaboration and providing access to advanced geospatial data capabilities, I-GUIDE is
+                tackling fundamental scientific and societal challenges with innovative solutions.</p>
         </div>
     </div>
 
@@ -302,7 +367,8 @@
                 <div class="basis-7/12">
                     <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Vulnerability Analysis for Aging Dam
                         Infrastructure</h1>
-                    <p class="text-sm font-light text-gray-500 dark:text-gray-400">This study aims to examine the impact of
+                    <p class="text-sm font-light text-gray-500 dark:text-gray-400">This study aims to examine the impact
+                        of
                         potential dam failures on socioeconomically disadvantaged populations in the United States. The
                         researchers analyze 427 federal dams in the contiguous US using a combination of data retrieval,
                         spatial operations, and statistical analysis. Their findings will show which populations are
@@ -317,8 +383,17 @@
             </div>
             <div class="flex gap-10 hidden p-4" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                 <div class="basis-7/12">
-                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Posuere ac ut consequat semper viverra nam libero</h1>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Posuere ac ut consequat semper viverra nam libero. Odio eu feugiat pretium nibh ipsum. Mi proin sed libero enim sed faucibus turpis in eu. Iaculis eu non diam phasellus. Enim facilisis gravida neque convallis. Eu volutpat odio facilisis mauris sit amet. Tincidunt augue interdum velit euismod. Tortor id aliquet lectus proin nibh nisl condimentum id. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Diam maecenas sed enim ut sem. Turpis nunc eget lorem dolor sed viverra. In nisl nisi scelerisque eu ultrices vitae auctor. Sit amet porttitor eget dolor morbi non. Purus sit amet volutpat consequat mauris nunc. Augue eget arcu dictum varius duis at. Massa placerat duis ultricies lacus sed turpis. Nunc mi ipsum faucibus vitae aliquet.</p>
+                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Posuere ac ut consequat semper viverra nam
+                        libero</h1>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Posuere ac ut consequat semper viverra nam
+                        libero. Odio eu feugiat pretium nibh ipsum. Mi proin sed libero enim sed faucibus turpis in eu.
+                        Iaculis eu non diam phasellus. Enim facilisis gravida neque convallis. Eu volutpat odio
+                        facilisis mauris sit amet. Tincidunt augue interdum velit euismod. Tortor id aliquet lectus
+                        proin nibh nisl condimentum id. Nulla pellentesque dignissim enim sit amet venenatis urna cursus
+                        eget. Diam maecenas sed enim ut sem. Turpis nunc eget lorem dolor sed viverra. In nisl nisi
+                        scelerisque eu ultrices vitae auctor. Sit amet porttitor eget dolor morbi non. Purus sit amet
+                        volutpat consequat mauris nunc. Augue eget arcu dictum varius duis at. Massa placerat duis
+                        ultricies lacus sed turpis. Nunc mi ipsum faucibus vitae aliquet.</p>
                 </div>
                 <div class="basis-5/12  rounded-lg overflow-hidden  drop-shadow-md">
                     <img src="assets/css/dam.png" alt="">
@@ -326,8 +401,20 @@
             </div>
             <div class="flex gap-10 hidden p-4" id="settings" role="tabpanel" aria-labelledby="settings-tab">
                 <div class="basis-7/12">
-                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis. Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Euismod elementum nisi quis eleifend quam. Id aliquet risus feugiat in ante metus dictum at. Id diam vel quam elementum pulvinar etiam non quam. Ipsum a arcu cursus vitae congue. Elementum nibh tellus molestie nunc non. Et tortor consequat id porta nibh venenatis cras. Neque egestas congue quisque egestas diam. Felis donec et odio pellentesque. Elementum pulvinar etiam non quam lacus suspendisse. Pulvinar elementum integer enim neque volutpat ac. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Morbi tincidunt augue interdum velit euismod in pellentesque massa placerat. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Viverra accumsan in nisl nisi scelerisque eu ultrices. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Turpis nunc eget lorem dolor. Massa enim nec dui nunc.</p>
+                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit</h1>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada
+                        fames ac turpis. Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Euismod
+                        elementum nisi quis eleifend quam. Id aliquet risus feugiat in ante metus dictum at. Id diam vel
+                        quam elementum pulvinar etiam non quam. Ipsum a arcu cursus vitae congue. Elementum nibh tellus
+                        molestie nunc non. Et tortor consequat id porta nibh venenatis cras. Neque egestas congue
+                        quisque egestas diam. Felis donec et odio pellentesque. Elementum pulvinar etiam non quam lacus
+                        suspendisse. Pulvinar elementum integer enim neque volutpat ac. Vitae justo eget magna fermentum
+                        iaculis eu non diam phasellus. Morbi tincidunt augue interdum velit euismod in pellentesque
+                        massa placerat. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Viverra
+                        accumsan in nisl nisi scelerisque eu ultrices. Eu nisl nunc mi ipsum faucibus vitae aliquet nec.
+                        Turpis nunc eget lorem dolor. Massa enim nec dui nunc.</p>
                 </div>
                 <div class="basis-5/12  rounded-lg overflow-hidden  drop-shadow-md">
                     <img src="assets/css/dam.png" alt="">
@@ -335,8 +422,14 @@
             </div>
             <div class="flex gap-10 hidden p-4" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
                 <div class="basis-7/12">
-                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Ipsum dolor sit amet consectetur adipiscing elit</h1>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Ipsum dolor sit amet consectetur adipiscing elit. Quam vulputate dignissim suspendisse in est ante. Pharetra convallis posuere morbi leo urna molestie at. Quis hendrerit dolor magna eget est lorem. Sagittis purus sit amet volutpat consequat mauris nunc. Sit amet luctus venenatis lectus magna fringilla urna. Odio aenean sed adipiscing diam donec adipiscing tristique. Porta lorem mollis aliquam ut porttitor. Pellentesque nec nam aliquam sem et tortor consequat id. Magna fermentum iaculis eu non.</p>
+                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Ipsum dolor sit amet consectetur adipiscing
+                        elit</h1>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Ipsum dolor sit amet consectetur adipiscing
+                        elit. Quam vulputate dignissim suspendisse in est ante. Pharetra convallis posuere morbi leo
+                        urna molestie at. Quis hendrerit dolor magna eget est lorem. Sagittis purus sit amet volutpat
+                        consequat mauris nunc. Sit amet luctus venenatis lectus magna fringilla urna. Odio aenean sed
+                        adipiscing diam donec adipiscing tristique. Porta lorem mollis aliquam ut porttitor.
+                        Pellentesque nec nam aliquam sem et tortor consequat id. Magna fermentum iaculis eu non.</p>
                 </div>
                 <div class="basis-5/12  rounded-lg overflow-hidden  drop-shadow-md">
                     <img src="assets/css/dam.png" alt="">
@@ -398,7 +491,8 @@
     <div class="w-full hero mt-12">
         <div class="bg-gray-100 px-20 py-20">
             <h1 class="z-2 text-3xl font-semibold mb-10">Join I-GUIDE's Mailing List</h1>
-            <p class="font-light text-sm text-black mb-10">Join I-GUIDE's mailing list for updates on geospatial discovery and
+            <p class="font-light text-sm text-black mb-10">Join I-GUIDE's mailing list for updates on geospatial
+                discovery and
                 innovation. Stay informed on community priorities, cutting-edge data capabilities, and exciting
                 advancements in various disciplines. Don't miss out on opportunities to participate in shaping the
                 future of geospatial data-intensive sciences. Sign up now!</p>
@@ -507,6 +601,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"
         integrity="sha512-FmCXNJaXWw1fc3G8zO3WdwR2N23YTWDFDTM3uretxVIbZ7lvnjHkciW4zy6JGvnrgjkcNEk8UNtdGTLs2GExAw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/navigation.js"></script>
 </body>
