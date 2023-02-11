@@ -132,7 +132,7 @@
 
 .page-title .custom-shape-divider-bottom-1675786129 {
     position: absolute;
-    bottom: -1px;
+    bottom: -10px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -158,7 +158,7 @@
 
 .hero-section .custom-shape-divider-bottom-1676052306 {
     position: absolute;
-    bottom: -1px;
+    bottom: -10px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -178,3 +178,68 @@
 }
 
 /*  ----------------------------------------------------*/
+
+#project-tabs-nav li.active {
+    @apply border-b-4 border-ig-orange text-ig-orange
+}
+
+:root {
+    --animate-delay: 0.05s;
+}
+
+#tabs-nav span {
+    @apply text-white;
+}
+
+/* #tabs-nav span#map.active {
+    @apply text-ig-olive bg-white;
+}
+
+#tabs-nav span#connect.active {
+    @apply text-ig-mustard bg-white;
+}
+
+#tabs-nav span#discover.active {
+    @apply text-ig-orange bg-white;
+} */
+
+
+/* Sweep To Right */
+.sweep-to-right {
+    /* padding: 20px; */
+    background: transparent;
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    transition: color 0.3s;
+}
+.sweep-to-right:before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease-out;
+}
+/* .sweep-to-right.active {
+    color: white;
+} */
+.sweep-to-right.active:before {
+    transform: scaleX(1);
+}
+.sweep-to-right#map:before {
+    @apply bg-ig-olive;
+}
+
+.sweep-to-right#connect:before {
+    @apply bg-ig-mustard;
+}
+
+.sweep-to-right#discover:before {
+    @apply bg-ig-orange;
+}

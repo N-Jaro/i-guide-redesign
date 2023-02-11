@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;900&display=swap" rel="stylesheet">
-    <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -186,19 +186,19 @@
             </div>
         </div>
     </nav>
-    <div class="hero-section relative lg:pb-[100px] -mt-[200px] lg:pt-[200px] overflow-x-hidden">
+    <div class="hero-section relative lg:pb-[100px] -mt-[200px] lg:pt-[200px] overflow-hidden">
         <div class="w-full z-20 relative">
             <div class="flex gap-20 justify-start">
                 <div class="w-1/3 mt-12">
                     <div class="pl-20">
-                        <h1 class="z-2 text-[4vw] font-semibold md:mb-[-2vh] text-shadow">
-                            <div id="tabs-nav" class="text-white">
-                                <span id="map" link="#map-slide">Map. </span><br>
-                                <span id="connect" link="#connect-slide">Connect.</span><br>
-                                <span id="discover" link="#discover-slide">Discover.</span>
+                        <h1 class="mb-10">
+                            <div id="tabs-nav" class="text-white text-[4vw] font-semibold text-shadow inline-block">
+                                <span id="map" class="sweep-to-right" link="#map-slide">Map. </span><br>
+                                <span id="connect" class="sweep-to-right" link="#connect-slide">Connect.</span><br>
+                                <span id="discover" class="sweep-to-right" link="#discover-slide">Discover.</span>
                             </div>
                         </h1>
-                        <p class="z-2 text-white text-[1.1vw] font-light tracking-wide leading-relaxed mt-5">I-GUIDE is
+                        <p class="text-white text-[1.1vw] font-light pt-15 inline-block"><strong>I-GUIDE</strong> is
                             empowering diverse communities to produce data-intensive solutions to society’s resilience
                             and sustainability challenges.</p>
                     </div>
@@ -207,22 +207,22 @@
                     <div id="tabs-content">
                         <div id="map-slide" class="hero-tab-content p-5 z-20">
                             <div class="grid grid-cols-7 gap-10 w-[110%]">
-                                <div class="col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__fadeInRight animate__delay-2s">
+                                <div class="animate col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-1s">
                                     <img src="assets/css/top1.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
                                     </h1>
                                 </div>
-                                <div class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__fadeInRight animate__delay-3s">
+                                <div class="animate col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-2s">
                                     <img src="assets/css/top2.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">The first in-person
                                         I-GUIDE AHM!</h1>
                                 </div>
-                                <div class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__fadeInRight animate__delay-3s">
+                                <div class="animate col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-3s">
                                     <img src="assets/css/top3.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-4">I-GUIDE All-Hands Meeting
                                         (Virtual) </h1>
                                 </div>
-                                <div class="col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__fadeInRight animate__delay-4s">
+                                <div class="animate col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-4s">
                                     <img src="assets/css/top1.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
                                     </h1>
@@ -232,25 +232,25 @@
                         <div id="connect-slide" class="hero-tab-content p-5 z-20">
                             <div class="grid grid-cols-7 gap-10 w-[110%]">
                                 <div
-                                    class="col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    class="animate col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-1s">
                                     <img src="assets/css/top1.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">TESTs
                                     </h1>
                                 </div>
                                 <div
-                                    class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    class="animate col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-2s">
                                     <img src="assets/css/top2.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">The first in-person
                                         I-GUIDE AHM!</h1>
                                 </div>
                                 <div
-                                    class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    class="animate col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-3s">
                                     <img src="assets/css/top3.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-4">I-GUIDE All-Hands Meeting
                                         (Virtual) </h1>
                                 </div>
                                 <div
-                                    class="col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    class="animate col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-4s">
                                     <img src="assets/css/top1.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
                                     </h1>
@@ -260,25 +260,25 @@
                         <div id="discover-slide" class="hero-tab-content p-5 z-20">
                             <div class="grid grid-cols-7 gap-10 w-[110%]">
                                 <div
-                                    class="col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    class="animate col-span-2 row-span-2 ease-in duration-300 h-fit overflow-hidden relative mt-10 rounded-lg drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-1s">
                                     <img src="assets/css/top1.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">TEST 3
                                     </h1>
                                 </div>
                                 <div
-                                    class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    class="animate col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-2s">
                                     <img src="assets/css/top2.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">The first in-person
                                         I-GUIDE AHM!</h1>
                                 </div>
                                 <div
-                                    class="col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    class="animate col-start-3 col-end-6 ease-in duration-300 h-fit relative rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-3s">
                                     <img src="assets/css/top3.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-4">I-GUIDE All-Hands Meeting
                                         (Virtual) </h1>
                                 </div>
                                 <div
-                                    class="col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl">
+                                    class="animate col-start-6 col-span-2 row-start-1 ease-in duration-300 row-span-2 h-fit relative mt-20 rounded-lg overflow-hidden  drop-shadow-md hover:scale-110 hover:drop-shadow-2xl animate__delay-4s">
                                     <img src="assets/css/top1.png" alt="">
                                     <h1 class=" absolute text-white bottom-0 font-semibold px-3 pb-2">I-GUIDE Webinar Series
                                     </h1>
@@ -299,12 +299,12 @@
 
     <div class="w-full px-20 hero  mt-12 flex gap-10 ">
         <div class="bg-gray-300 aspect-video basis-1/2 overflow-hidden rounded-lg">
-            <!-- <iframe id="kmsembed-1_ebqgma2n" width="100%" height="100%"
+            <iframe id="kmsembed-1_ebqgma2n" width="100%" height="100%"
                 src="https://mediaspace.illinois.edu/embed/secure/iframe/entryId/1_ebqgma2n/uiConfId/26883701"
                 class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen
                 allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade"
                 sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
-                frameborder="0" title="Kaltura Player"></iframe> -->
+                frameborder="0" title="Kaltura Player"></iframe>
         </div>
         <div class=" basis-1/2">
             <h1 class="z-2 text-[4vw] ">
@@ -323,6 +323,11 @@
         </div>
 
     </div>
+
+    <div class="w-screen overflow-y-visible relative pt-20 pb-5">
+        <div class="w-full bg-gray-200" style="transform: rotate(-2deg); height:1px !important;"></div>
+    </div>
+
     <div class="px-20 mt-20 flex">
         <div class="w-3/4">
             <h1 class="text-2xl font-semibold">Overcoming Scientific and Societal Challenges</h1>
@@ -331,115 +336,108 @@
                 tackling fundamental scientific and societal challenges with innovative solutions.</p>
         </div>
     </div>
-
-    <div class="px-20 hero  mt-12">
+    <div class="px-20 mt-12 min-h-[450px]">
         <div class="mb-4">
-            <ul class="flex flex-wrap -mb-px text-sm font-semibold text-center" id="myTab"
-                data-tabs-toggle="#myTabContent" role="tablist">
-                <li class="flex-1 flex" role="presentation">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg flex-1" id="profile-tab"
-                        data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
-                        aria-selected="false">Aging Dam</button>
-                </li>
-                <li class="flex-1 flex" role="presentation">
-                    <button
-                        class="inline-block p-4 border-b-2 border-transparent rounded-t-lg  active:text-[#F4824A] hover:text-[#F4824A] flex-1"
-                        id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
-                        aria-controls="dashboard" aria-selected="false">Geospatial Data Science Convergence
-                        Curriculum</button>
-                </li>
-                <li class="flex-1 flex" role="presentation">
-                    <button
-                        class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-200 hover:border-gray-300 dark:hover:text-gray-300 flex-1"
-                        id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
-                        aria-selected="false">Hypercube</button>
-                </li>
-                <li class="flex-1 flex" role="presentation">
-                    <button
-                        class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-200 hover:border-gray-300 dark:hover:text-gray-300 flex-1"
-                        id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts"
-                        aria-selected="false">Geoethics</button>
-                </li>
+            <ul id="project-tabs-nav" class="flex flex-wrap -mb-px text-sm font-semibold text-center">
+                <li class="flex-1 text-center border-b-2 p-5" link="#proj1">Aging Dam</li>
+                <li class="flex-2 text-center border-b-2 p-5 whitespace-nowrap" link="#proj2">Geospatial Data Science Convergence Curriculum</li>
+                <li class="flex-1 text-center border-b-2 p-5" link="#proj3">Hypercube</li>
+                <li class="flex-1 text-center border-b-2 p-5" link="#proj4">Geoethics</li>
             </ul>
         </div>
-        <div id="myTabContent">
-            <div class="flex gap-10 p-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="basis-7/12">
-                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Vulnerability Analysis for Aging Dam
-                        Infrastructure</h1>
-                    <p class="text-sm font-light text-gray-500 dark:text-gray-400">This study aims to examine the impact
-                        of
-                        potential dam failures on socioeconomically disadvantaged populations in the United States. The
-                        researchers analyze 427 federal dams in the contiguous US using a combination of data retrieval,
-                        spatial operations, and statistical analysis. Their findings will show which populations are
-                        most vulnerable to the effects of dam failures and which states have the highest number of dams
-                        that could impact these populations. The study also highlights the challenges faced during the
-                        data processing stage, including bottlenecks and roadblocks. The goal is to better understand
-                        the potential risks to communities and inform decision-making around dam safety.</p>
-                </div>
-                <div class="basis-5/12 rounded-lg overflow-hidden  drop-shadow-md">
-                    <img src="assets/css/dam.png" alt="">
-                </div>
-            </div>
-            <div class="flex gap-10 hidden p-4" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                <div class="basis-7/12">
-                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Posuere ac ut consequat semper viverra nam
-                        libero</h1>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Posuere ac ut consequat semper viverra nam
-                        libero. Odio eu feugiat pretium nibh ipsum. Mi proin sed libero enim sed faucibus turpis in eu.
-                        Iaculis eu non diam phasellus. Enim facilisis gravida neque convallis. Eu volutpat odio
-                        facilisis mauris sit amet. Tincidunt augue interdum velit euismod. Tortor id aliquet lectus
-                        proin nibh nisl condimentum id. Nulla pellentesque dignissim enim sit amet venenatis urna cursus
-                        eget. Diam maecenas sed enim ut sem. Turpis nunc eget lorem dolor sed viverra. In nisl nisi
-                        scelerisque eu ultrices vitae auctor. Sit amet porttitor eget dolor morbi non. Purus sit amet
-                        volutpat consequat mauris nunc. Augue eget arcu dictum varius duis at. Massa placerat duis
-                        ultricies lacus sed turpis. Nunc mi ipsum faucibus vitae aliquet.</p>
-                </div>
-                <div class="basis-5/12  rounded-lg overflow-hidden  drop-shadow-md">
-                    <img src="assets/css/dam.png" alt="">
+        <div class="w-full">
+            <div id="proj1" class="project-tab-content">
+                <div class="flex gap-10 p-4">
+                    <div class="basis-7/12 animate__delay-1s">
+                        <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Vulnerability Analysis for Aging Dam
+                            Infrastructure</h1>
+                        <p class="text-[1vw] font-light text-black dark:text-gray-400 ">This study aims to examine the impact
+                            of
+                            potential dam failures on socioeconomically disadvantaged populations in the United States. The
+                            researchers analyze 427 federal dams in the contiguous US using a combination of data retrieval,
+                            spatial operations, and statistical analysis. Their findings will show which populations are
+                            most vulnerable to the effects of dam failures and which states have the highest number of dams
+                            that could impact these populations. The study also highlights the challenges faced during the
+                            data processing stage, including bottlenecks and roadblocks. The goal is to better understand
+                            the potential risks to communities and inform decision-making around dam safety.</p>
+                    </div>
+                    <div class="basis-5/12 rounded-lg overflow-hidden drop-shadow-md animate__delay-5s">
+                        <img src="assets/css/dam.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="flex gap-10 hidden p-4" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                <div class="basis-7/12">
-                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit</h1>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada
-                        fames ac turpis. Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Euismod
-                        elementum nisi quis eleifend quam. Id aliquet risus feugiat in ante metus dictum at. Id diam vel
-                        quam elementum pulvinar etiam non quam. Ipsum a arcu cursus vitae congue. Elementum nibh tellus
-                        molestie nunc non. Et tortor consequat id porta nibh venenatis cras. Neque egestas congue
-                        quisque egestas diam. Felis donec et odio pellentesque. Elementum pulvinar etiam non quam lacus
-                        suspendisse. Pulvinar elementum integer enim neque volutpat ac. Vitae justo eget magna fermentum
-                        iaculis eu non diam phasellus. Morbi tincidunt augue interdum velit euismod in pellentesque
-                        massa placerat. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Viverra
-                        accumsan in nisl nisi scelerisque eu ultrices. Eu nisl nunc mi ipsum faucibus vitae aliquet nec.
-                        Turpis nunc eget lorem dolor. Massa enim nec dui nunc.</p>
-                </div>
-                <div class="basis-5/12  rounded-lg overflow-hidden  drop-shadow-md">
-                    <img src="assets/css/dam.png" alt="">
+            <div id="proj2" class="project-tab-content">
+                <div class="flex gap-10 p-4">
+                    <div class="basis-7/12 animate__delay-1s">
+                        <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Posuere ac ut consequat semper viverra nam
+                            libero</h1>
+                        <p class="text-[1vw] font-light text-black dark:text-gray-400">Posuere ac ut consequat semper viverra nam
+                            libero. Odio eu feugiat pretium nibh ipsum. Mi proin sed libero enim sed faucibus turpis in eu.
+                            Iaculis eu non diam phasellus. Enim facilisis gravida neque convallis. Eu volutpat odio
+                            facilisis mauris sit amet. Tincidunt augue interdum velit euismod. Tortor id aliquet lectus
+                            proin nibh nisl condimentum id. Nulla pellentesque dignissim enim sit amet venenatis urna cursus
+                            eget. Diam maecenas sed enim ut sem. Turpis nunc eget lorem dolor sed viverra. In nisl nisi
+                            scelerisque eu ultrices vitae auctor. Sit amet porttitor eget dolor morbi non. Purus sit amet
+                            volutpat consequat mauris nunc. Augue eget arcu dictum varius duis at. Massa placerat duis
+                            ultricies lacus sed turpis. Nunc mi ipsum faucibus vitae aliquet.</p>
+                    </div>
+                    <div class="basis-5/12  rounded-lg overflow-hidden  drop-shadow-md animate__delay-5s">
+                        <img src="assets/css/dam.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="flex gap-10 hidden p-4" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-                <div class="basis-7/12">
-                    <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Ipsum dolor sit amet consectetur adipiscing
-                        elit</h1>
-                    <p class="text-sm text-gray-500 dark:text-gray-400">Ipsum dolor sit amet consectetur adipiscing
-                        elit. Quam vulputate dignissim suspendisse in est ante. Pharetra convallis posuere morbi leo
-                        urna molestie at. Quis hendrerit dolor magna eget est lorem. Sagittis purus sit amet volutpat
-                        consequat mauris nunc. Sit amet luctus venenatis lectus magna fringilla urna. Odio aenean sed
-                        adipiscing diam donec adipiscing tristique. Porta lorem mollis aliquam ut porttitor.
-                        Pellentesque nec nam aliquam sem et tortor consequat id. Magna fermentum iaculis eu non.</p>
+            <div id="proj3" class="project-tab-content">
+                <div class="flex gap-10 p-4" >
+                    <div class="basis-7/12 animate__delay-1s">
+                        <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit</h1>
+                        <p class="text-[1vw] font-light text-black dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada
+                            fames ac turpis. Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Euismod
+                            elementum nisi quis eleifend quam. Id aliquet risus feugiat in ante metus dictum at. Id diam vel
+                            quam elementum pulvinar etiam non quam. Ipsum a arcu cursus vitae congue. Elementum nibh tellus
+                            molestie nunc non. Et tortor consequat id porta nibh venenatis cras. Neque egestas congue
+                            quisque egestas diam. Felis donec et odio pellentesque. Elementum pulvinar etiam non quam lacus
+                            suspendisse. Pulvinar elementum integer enim neque volutpat ac. Vitae justo eget magna fermentum
+                            iaculis eu non diam phasellus. Morbi tincidunt augue interdum velit euismod in pellentesque
+                            massa placerat. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Viverra
+                            accumsan in nisl nisi scelerisque eu ultrices. Eu nisl nunc mi ipsum faucibus vitae aliquet nec.
+                            Turpis nunc eget lorem dolor. Massa enim nec dui nunc.</p>
+                    </div>
+                    <div class="basis-5/12  rounded-lg overflow-hidden  drop-shadow-md animate__delay-5s">
+                        <img src="assets/css/dam.png" alt="">
+                    </div>
                 </div>
-                <div class="basis-5/12  rounded-lg overflow-hidden  drop-shadow-md">
-                    <img src="assets/css/dam.png" alt="">
+            </div>
+            <div id="proj4" class="project-tab-content">
+                <div class="flex gap-10 p-4">
+                    <div class="basis-7/12 animate__delay-1s">
+                        <h1 class="text-2xl mb-5 text-[#F4824A] font-semibold">Ipsum dolor sit amet consectetur adipiscing
+                            elit</h1>
+                        <p class="text-[1vw] font-light text-black dark:text-gray-400">Ipsum dolor sit amet consectetur adipiscing
+                            elit. Quam vulputate dignissim suspendisse in est ante. Pharetra convallis posuere morbi leo
+                            urna molestie at. Quis hendrerit dolor magna eget est lorem. Sagittis purus sit amet volutpat
+                            consequat mauris nunc. Sit amet luctus venenatis lectus magna fringilla urna. Odio aenean sed
+                            adipiscing diam donec adipiscing tristique. Porta lorem mollis aliquam ut porttitor.
+                            Pellentesque nec nam aliquam sem et tortor consequat id. Magna fermentum iaculis eu non.</p>
+                    </div>
+                    <div class="basis-5/12  rounded-lg overflow-hidden  drop-shadow-md animate__delay-5s">
+                        <img src="assets/css/dam.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w-full px-20 hero mt-12">
+
+        
+    <div class="w-screen overflow-y-visible relative pt-20 pb-5">
+        <div class="w-full bg-gray-200" style="transform: rotate(2deg); height:1px !important;"></div>
+    </div>
+
+
+    <div class="w-full px-20 mt-12">
         <h1 class="z-2 text-3xl font-semibold mb-10">NEWS AND UPDATES</h1>
-        <div class="grid grid-cols-3 grid-rows-2 grid-flow-col gap-8">
+        <div class="grid grid-cols-3 grid-rows-2 grid-flow-col gap-10">
             <div class="max-w-sm rounded overflow-hidden ease-in duration-300 shadow-lg hover:shadow-xl mb-6">
                 <img class="w-full" src="assets/css/card1.png" alt="Sunset in the mountains">
                 <div class="px-6 py-4">
@@ -459,9 +457,6 @@
                     </p>
                 </div>
             </div>
-
-
-
             <div class="max-w-sm rounded overflow-hidden ease-in duration-300 shadow-lg hover:shadow-xl mb-6">
                 <img class="w-full" src="assets/css/card1.png" alt="Sunset in the mountains">
                 <div class="px-6 py-4">
@@ -564,7 +559,7 @@
             <img src="assets/css/inst10.png" alt="" class="mx-auto mb-10 h-[15vh]">
         </div>
     </div>
-    <footer class="flex py-10 px-20" style="background-image: url('assets/css/footer.png');">
+    <footer class="flex py-10 px-20" style="background-image: url('assets/css/footer.png');background-size: cover; background-position: center;">
         <div class="pt-7 mb-0 text-white">
             <div class="flex">
                 <img src="assets/css/nsf.png" alt="" class="h-[7vw]">

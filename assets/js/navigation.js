@@ -1,3 +1,5 @@
+var slideNumber=1;
+
 $(function () {
     $('#main-menu').slicknav({
         label: '',
@@ -61,9 +63,9 @@ $(function () {
         lastScrollTop = st;
     }
 
+    var mottos = $('#tabs-nav span');
 
     //// Create tab functionality for the Hero section 
-
     $('#tabs-nav span:first-child').addClass('active');
     $('.hero-tab-content').hide();
     $('.hero-tab-content:first').show();
@@ -71,14 +73,50 @@ $(function () {
     // Click function
     $('#tabs-nav span').on('click', function(){
         console.log('test');
+        var clicked = $(this).attr('id');
+        console.log(clicked);
+        switch(clicked) {
+            case "map" : slideNumber=1 ; break;
+            case "connect" : slideNumber=2 ; break;
+            case "discover" : slideNumber=0 ; break;
+        }
+
         $('#tabs-nav span').removeClass('active');
         $(this).addClass('active');
         $('.hero-tab-content').hide();
         
         var activeTab = $(this).attr('link');
-        $(activeTab).fadeIn();
+        $(activeTab).show();
+        $(activeTab).find('.animate').addClass('animate__animated animate__fadeInRight');
         return false;
     });
+
+    setInterval(function() {
+        var motto = mottos[slideNumber++];
+        $(motto).click();
+        if(slideNumber >= mottos.length) i = 0;
+    }, 7000); 
+
+
+    //// Create tab functionality for the Hero section 
+    $('#project-tabs-nav li:first').addClass('active');
+    $('.project-tab-content').hide();
+    $('.project-tab-content:first').show();
+
+    // Click function
+    $('#project-tabs-nav li').on('click', function(){
+        console.log('test2');
+        $('#project-tabs-nav li').removeClass('active');
+        $(this).addClass('active');
+        $('.project-tab-content').hide();
+        
+        var activeTab = $(this).attr('link');
+        $(activeTab).show();
+        $(activeTab).find('.basis-7\\/12').addClass('animate__animated animate__fadeInUp');
+        $(activeTab).find('.basis-5\\/12').addClass('animate__animated animate__fadeInUp');
+        return false;
+    });
+
 
 
 });
