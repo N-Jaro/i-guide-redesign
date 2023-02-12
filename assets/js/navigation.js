@@ -101,7 +101,7 @@ $(function () {
         var motto = mottos[slideNumber++];
         $(motto).click();
         if(slideNumber >= mottos.length) i = 0;
-    }, 5000); 
+    }, 100000); 
 
     // Click function
     $('#tabs-nav span').on('click', function(){
