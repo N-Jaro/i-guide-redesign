@@ -186,7 +186,7 @@
             </div>
         </div>
     </nav>
-    <div class="hero-section relative pb-[100px] pt-[100px] -mt-[70px] md:-mt-[200px] md:pt-[200px] overflow-hidden">
+    <div class="hero-section relative pb-5 md:pb-[100px] pt-[100px] -mt-[70px] md:-mt-[200px] md:pt-[200px] overflow-hidden">
         <div class="w-full">
             <div class="flex flex-col md:px-10 md:flex-row md:gap-5 lg:gap-10 justify-start">
                 <div class="w-screen px-10 md:w-4/12 lg:w-1/3 md:mt-7 md:pl-5 lg:mt-12 lg:pl-17">
@@ -279,20 +279,25 @@
                 </div>
             </div>
         </div>
-        <div class="custom-shape-divider-bottom-1676052306 z-10">
+        <div class="invisible sm:visible custom-shape-divider-bottom-1676052306 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
             </svg>
         </div>
     </div>
-    <div class="container flex flex-col gap-5 items-start lg:px-20 lg:mt-12 lg:gap-10">
-        <div class="text-center w-full">
+
+    <div class="block md:hidden w-screen overflow-y-visible relative pt-10 pb-10">
+        <div class="w-full bg-gray-200" style="transform: rotate(4deg); height:1px !important;"></div>
+    </div>
+
+    <div class="container flex flex-col gap-5 p-10 lg:grid md:grid-cols-2 md:grid-rows--[min-content_min-content]">
+        <div class="text-center lg:text-left w-full md:col-start-2">
             <h1 class="text-3xl">
                 <span class="text-ig-brown">We are </span><span class="text-ig-blue font-black">I</span><span class="text-ig-brown font-black">-</span><span class="text-ig-teal font-black">G</span><span class="text-ig-olive font-black">U</span><span class="text-ig-light-green font-black">I</span><span class="text-ig-orange font-black">D</span><span class="text-ig-mustard font-black">E</span>
             </h1>
         </div>
-        <div class=" ">
-            <p class="z-2 text-xs md:text-sm font-light tracking-wide mt-1">The National Science Foundation (NSF) Institute for
+        <div class="md:col-start-2 md:row-start-2">
+            <p class="z-2 text-xs md:text-sm font-light tracking-wide mt-1 text-center lg:text-left">The National Science Foundation (NSF) Institute for
                 Geospatial Understanding through an Integrative Discovery Environment (I-GUIDE) integrates AI and
                 cyberGIS, reproducible data-intensive analytics and modeling, FAIR data principles, and innovative
                 education and workforce development programs to transform geospatial data-intensive sciences.
@@ -304,7 +309,7 @@
                 sustainability concerns through synergistic achievements in these disciplines. </p>
         </div>
 
-        <div class="w-full flex justify-center">
+        <div class="w-full flex justify-center drop-shadow-xl md:row-start-1 md:row-span-2">
             <div class="bg-gray-300 aspect-video w-full md:w-[80%] lg:w-full overflow-hidden rounded-lg ">
                 <iframe id="kmsembed-1_ebqgma2n" width="100%" height="100%"
                     src="https://mediaspace.illinois.edu/embed/secure/iframe/entryId/1_ebqgma2n/uiConfId/26883701"

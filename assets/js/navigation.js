@@ -65,7 +65,7 @@ $(function () {
 
         // Make sure they scroll more than delta
         // console.log(lastScrollTop, st, Math.abs(lastScrollTop - st), delta)
-        if (st == 0) {
+        if (st < 10) {
             $('#navigation').addClass('bg-transparent text-white').removeClass('bg-white text-black shadow-xl');
         } else if (st > 0 && st < 400) {
             $('#navigation').addClass('bg-white text-black shadow-xl').removeClass('bg-transparent text-white');
