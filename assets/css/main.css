@@ -1707,6 +1707,10 @@ video {
     padding-top: 200px;
   }
 
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .md\:text-\[4vw\] {
     font-size: 4vw;
   }
@@ -1775,6 +1779,10 @@ video {
   .lg\:text-left {
     text-align: left;
   }
+
+  .lg\:text-\[56px\] {
+    font-size: 56px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1798,6 +1806,10 @@ video {
 
   .xl\:p-0 {
     padding: 0px;
+  }
+
+  .xl\:text-\[80px\] {
+    font-size: 80px;
   }
 
   .xl\:text-base {
