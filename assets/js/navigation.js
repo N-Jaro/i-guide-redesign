@@ -6,13 +6,39 @@ $(function () {
         prependTo: '#navigation',
         closedSymbol: '<span class="icon-chevron-right"></span>',
         openedSymbol: '<span class="icon-chevron-down"></span>',
+        init: function(){
+            $('.slicknav_menu').addClass('close');
+            $('.slicknav_menu').css('background-color','transparent');
+            $('.logo-c').css('display','none');
+            $('.logo-w').css('display','block');
+            $('.slicknav_menu .slicknav_icon-bar').css('background-color', 'white');
+        },
+        beforeOpen: function(trigger){
+            if($(trigger).hasClass('slicknav_btn')){ 
+                $('.slicknav_menu').addClass('open');
+                $('.slicknav_menu').css('background-color','white');
+                $('.logo-c').css('display','block');
+                $('.logo-w').css('display','none');
+                $('.slicknav_menu .slicknav_icon-bar').css('background-color', 'black');
+            }
+        }, 
+        afterClose: function(trigger){
+            if($(trigger).hasClass('slicknav_btn')){ 
+                $('.slicknav_menu').addClass('close');
+                $('.slicknav_menu').css('background-color','transparent');
+                $('.logo-c').css('display','none');
+                $('.logo-w').css('display','block');
+                $('.slicknav_menu .slicknav_icon-bar').css('background-color', 'white');
+            }
+        }
     });
 
-    $('.slicknav_menu').prepend('<img class="m-2 h-[30px] w-auto inline-block" src="./assets/css/logo-color.png"alt="">');
-    $('.slicknav_menu').addClass('sticky top-0 z-50 block md:hidden bg-white text-black');
+    $('.slicknav_menu').addClass('md:hidden flex bg-transparent text-black');
+    $('.slicknav_menu').prepend('<div class="grow"><img class="logo-c hidden h-[30px] w-auto" src="./assets/css/logo-color.png"alt=""><img class="logo-w h-[30px] w-auto" src="./assets/css/logo-w.png"alt=""></div>');
+    $('.slicknav_nav').addClass('absolute bg-white w-screen');
 
     // Add the arrows to navigation items
-    $('#navigation #main-menu>li.menu-item-has-children > a').append('<span class="pl-5 pr-3 inline-block icon-angle-down"></span>');
+    $('#navigation #main-menu>li.menu-item-has-children > a').append('<span class="inline-block icon-angle-down"></span>');
     $('#navigation #main-menu>li>ul.sub-menu>li.menu-item-has-children > a').prepend('<span class="pl-0 pr-3 inline-block icon-angle-left"></span>');
 
 
@@ -21,6 +47,7 @@ $(function () {
     var lastScrollTop = 0;
     var delta = 450;
     var navbarHeight = $('#navigation').outerHeight();
+    console.log(navbarHeight);
 
     $(window).scroll(function (event) {
         didScroll = true;
@@ -69,6 +96,12 @@ $(function () {
     $('#tabs-nav span:first-child').addClass('active');
     $('.hero-tab-content').hide();
     $('.hero-tab-content:first').show();
+    
+    var autoRotate = setInterval(function() {
+        var motto = mottos[slideNumber++];
+        $(motto).click();
+        if(slideNumber >= mottos.length) i = 0;
+    }, 100000); 
 
     // Click function
     $('#tabs-nav span').on('click', function(){
@@ -90,12 +123,6 @@ $(function () {
         $(activeTab).find('.animate').addClass('animate__animated animate__fadeInRight');
         return false;
     });
-
-    setInterval(function() {
-        var motto = mottos[slideNumber++];
-        $(motto).click();
-        if(slideNumber >= mottos.length) i = 0;
-    }, 7000); 
 
 
     //// Create tab functionality for the Hero section 

@@ -253,18 +253,30 @@
 }
 
 .slicknav_menu {
-    display: block;
+    padding: 0 !important;
     z-index: 1000;
     position: sticky;
-    background-color: white !important;
+    /* background: transparent !important; */
 }
-
 .slicknav_btn {
-    background-color: rgb(241 129 73) !important;
+    display: inline-block !important;
+    background-color: transparent !important;
+    margin: 1.2rem !important;
+    float: unset !important;
 }
-
+.slicknav_menu .slicknav_icon {
+    float: unset !important;
+}
 .slicknav_menu a {
     color: black !important;
+}
+.slicknav_menu .logo-c,
+.slicknav_menu .logo-w {
+    @apply  mx-7 my-5;
+}
+
+.slicknav_nav {
+    top: 100%;
 }
 
 .nav-down {
@@ -375,6 +387,10 @@
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     flex-direction: column;
     opacity: 1;
+}
+
+#navigation #main-menu>li.menu-item-has-children > a span {
+    @apply md:px-2 lg:pl-5 lg:pr-3;
 }
 
 @media (max-width: 768px) {

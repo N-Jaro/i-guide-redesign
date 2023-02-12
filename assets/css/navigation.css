@@ -253,18 +253,37 @@
 }
 
 .slicknav_menu {
-  display: block;
+  padding: 0 !important;
   z-index: 1000;
   position: sticky;
-  background-color: white !important;
+  /* background: transparent !important; */
 }
 
 .slicknav_btn {
-  background-color: rgb(241 129 73) !important;
+  display: inline-block !important;
+  background-color: transparent !important;
+  margin: 1.2rem !important;
+  float: unset !important;
+}
+
+.slicknav_menu .slicknav_icon {
+  float: unset !important;
 }
 
 .slicknav_menu a {
   color: black !important;
+}
+
+.slicknav_menu .logo-c,
+.slicknav_menu .logo-w {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.slicknav_nav {
+  top: 100%;
 }
 
 .nav-down {
@@ -375,6 +394,20 @@
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   flex-direction: column;
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  #navigation #main-menu>li.menu-item-has-children > a span {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #navigation #main-menu>li.menu-item-has-children > a span {
+    padding-left: 1.25rem;
+    padding-right: 0.75rem;
+  }
 }
 
 @media (max-width: 768px) {
