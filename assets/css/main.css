@@ -1669,44 +1669,12 @@ video {
     width: 80%;
   }
 
-  .md\:auto-rows-min {
-    grid-auto-rows: min-content;
-  }
-
-  .md\:auto-rows-max {
-    grid-auto-rows: max-content;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-\[min-content_1fr\] {
-    grid-template-columns: min-content 1fr;
-  }
-
-  .md\:grid-cols-\[_1fr\] {
-    grid-template-columns: 1fr;
-  }
-
-  .md\:grid-cols-\[_1frmin-content\] {
-    grid-template-columns: 1frmin-content;
-  }
-
-  .md\:grid-cols-\[_1fr_min-content\] {
-    grid-template-columns: 1fr min-content;
-  }
-
-  .md\:grid-cols-\[1fr_min-content\] {
-    grid-template-columns: 1fr min-content;
-  }
-
-  .md\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1737,10 +1705,6 @@ video {
 
   .md\:pt-\[200px\] {
     padding-top: 200px;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 
   .md\:text-\[4vw\] {

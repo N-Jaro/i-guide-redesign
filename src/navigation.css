@@ -1,3 +1,59 @@
+.-mt-\[200px\] {
+    margin-top: -200px;
+}
+
+.h-\[120px\] {
+    height: 120px;
+}
+
+.h-\[56px\] {
+    height: 56px;
+}
+
+.h-\[300px\] {
+    height: 300px;
+}
+
+.h-\[30px\] {
+    height: 30px;
+}
+
+.w-\[115px\] {
+    width: 115px;
+}
+
+.space-x-4> :not([hidden])~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.border-l-8 {
+    border-left-width: 8px;
+}
+
+.border-ig-orange {
+    --tw-border-opacity: 1;
+    border-color: rgb(241 129 73 / var(--tw-border-opacity));
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.pt-\[200px\] {
+    padding-top: 200px;
+}
+
+.pb-\[80px\] {
+    padding-bottom: 80px;
+}
+
 .slicknav_menu {
     padding: 0 !important;
     z-index: 1000;
@@ -154,27 +210,7 @@
     }
 }
 
-@media (min-width: 768px) {
-    .md\:flex {
-        display: flex;
-    }
-
-    .md\:hidden {
-        display: none;
-    }
-}
-
-@media (min-width: 1024px) {
-    .lg\:px-10 {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-}
-
 @media (min-width: 1280px) {
-    .xl\:m-5 {
-        margin: 1.25rem;
-    }
 
     .xl\:h-\[80px\] {
         height: 80px;
@@ -182,20 +218,5 @@
 
     .xl\:w-\[165px\] {
         width: 165px;
-    }
-
-    .xl\:space-x-8> :not([hidden])~ :not([hidden]) {
-        --tw-space-x-reverse: 0;
-        margin-right: calc(2rem * var(--tw-space-x-reverse));
-        margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-    }
-
-    .xl\:p-0 {
-        padding: 0px;
-    }
-
-    .xl\:text-base {
-        font-size: 1rem;
-        line-height: 1.5rem;
     }
 }
