@@ -229,8 +229,7 @@
 /* .sweep-to-right.active {
     color: white;
 } */
-.sweep-to-right.active:before,
-.sweep-to-right:hover:before  {
+.sweep-to-right.active:before {
     transform: scaleX(1);
 }
 .sweep-to-right#map:before {

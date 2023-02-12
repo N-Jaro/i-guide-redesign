@@ -3,7 +3,7 @@ var slideNumber=1;
 $(function () {
     $('#main-menu').slicknav({
         label: '',
-        prependTo: '#navigation',
+        prependTo: 'body',
         closedSymbol: '<span class="icon-chevron-right"></span>',
         openedSymbol: '<span class="icon-chevron-down"></span>',
         init: function(){
