@@ -36,7 +36,7 @@
 }
 
 .hero-section {
-    background-image: url('./BG.png');
+    background-image: url('../images/BG.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -237,13 +237,13 @@
 }
 
 footer {
-    background-image: url('./footer.png');
+    background-image: url('../images/footer.png');
     background-size: cover; 
     background-position: center;
 }
 
 .page-title {
-    background-image:url('./BG.png'); 
+    background-image:url('../images/BG.png'); 
     background-repeat: no-repeat; 
     background-position: center -50px;
     background-size: cover;
