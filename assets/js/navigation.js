@@ -165,7 +165,7 @@ $(function () {
     var screenSize = $(window).width();
     function renderTwitter (height) {
         //Render twitter widget 
-        twttr.widgets.createTimeline(
+        window.twttr.widgets.createTimeline(
             {
             sourceType: "profile",
             screenName: "NSFiGUIDE"
