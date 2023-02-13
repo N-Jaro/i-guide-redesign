@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;900&display=swap" rel="stylesheet">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/navigation.css">
     <!-- <link rel="stylesheet" href="assets/css/typography.css"> -->
@@ -16,66 +18,75 @@
 </head>
 
 <body>
-    <nav id="navigation" class="ease-in duration-100 sticky top-0 z-50 text-white">
-        <div id="desktop-menu" class="hidden md:flex items-center justify-between flex-wrap bg-transparent px-2 lg:px-10 h-[120px]">
-            <div class="flex items-center flex-shrink-0 mr-6">
-                <img class="logo-color m-3 xl:m-5 h-[56px] w-[115px] xl:p-0 xl:h-[80px] xl:w-[165px]" src="./assets/css/logo-color.png"
-                    alt="">
-                <img class="logo-white m-3 xl:m-5 h-[56px] w-[115px] xl:p-0 xl:h-[80px] xl:w-[165px]" src="/assets/css/logo-w.png"
+    <nav id="navigation" class="sticky top-0 z-50 text-white p-0">
+        <div id="desktop-menu" class="hidden md:flex items-center justify-between flex-wrap bg-transparent md:h-[100px] lg:h-[120px] md:px-5 lg:px-20">
+            <div class="flex items-center flex-shrink-0 ml-3 md:ml-4 mr-6">
+                <img class="logo-color h-[56px] w-[115px] xl:p-0 xl:h-[80px] xl:w-[165px]"
+                    src="assets/css/logo-color.png" alt="">
+                <img class="logo-white h-[56px] w-[115px] xl:p-0 xl:h-[80px] xl:w-[165px]" src="assets/css/logo-w.png"
                     alt="">
             </div>
             <div class="menu-main-navigation-container ">
-                <ul id="main-menu" class="nav hidden md:flex items-center text-sm xl:text-base space-x-4 xl:space-x-8 font-light">
+                <ul id="main-menu"
+                    class="nav hidden md:flex items-center text-sm xl:text-base space-x-4 xl:space-x-8 font-light">
                     <li id="menu-item-28"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28">
-                        <a href="index.html">Overview</a>
+                        <a href="page.html">Overview</a>
                         <ul class="sub-menu">
                             <li id="menu-item-180"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180"><a
-                                    href="index.html">About</a></li>
+                                    href="page.html">About</a></li>
                             <li id="menu-item-179"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a
-                                    href="index.html">Leadership</a></li>
+                                    href="page.html">Leadership</a></li>
                             <li id="menu-item-427"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-427">
-                                <a href="index.html">I-GUIDE Teams</a>
+                                <a href="page.html">I-GUIDE Teams</a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-129"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129"><a
-                                            href="index.html">Convergence Science
-                                            Catalysts</a></li>
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129">
+                                        <a href="page.html">Convergence Science
+                                            Catalysts</a>
+                                    </li>
                                     <li id="menu-item-124"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a
-                                            href="index.html">Geospatial Artificial Intelligence &amp;
-                                            Data Science</a></li>
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124">
+                                        <a href="page.html">Geospatial Artificial Intelligence
+                                            &amp;
+                                            Data Science</a>
+                                    </li>
                                     <li id="menu-item-128"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a
-                                            href="index.html">Core Cyberinfrastructure Capabilities
-                                            &amp; Services</a></li>
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128">
+                                        <a href="page.html">Core Cyberinfrastructure
+                                            Capabilities
+                                            &amp; Services</a>
+                                    </li>
                                     <li id="menu-item-127"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127"><a
-                                            href="index.html">Education &amp; Workforce
-                                            Development</a></li>
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127">
+                                        <a href="page.html">Education &amp; Workforce
+                                            Development</a>
+                                    </li>
                                     <li id="menu-item-126"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a
-                                            href="index.html">Engagement &amp; Partnerships</a>
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126">
+                                        <a href="page.html">Engagement &amp;
+                                            Partnerships</a>
                                     </li>
                                     <li id="menu-item-125"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a
-                                            href="index.html">Evaluation &amp; Knowledge
-                                            Transfer</a></li>
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125">
+                                        <a href="page.html">Evaluation &amp; Knowledge
+                                            Transfer</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li id="menu-item-315"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-315"><a
-                                    href="index.html">Partners</a></li>
+                                    href="page.html">Partners</a></li>
                             <li id="menu-item-483"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-483"><a
-                                    href="index.html">External
+                                    href="page.html">External
                                     Advisory Board</a></li>
                             <li id="menu-item-966"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-966"><a
-                                    href="index.html">FAQ</a></li>
+                                    href="page.html">FAQ</a></li>
                         </ul>
                     </li>
                     <li id="menu-item-1208"
@@ -84,40 +95,40 @@
                         <ul class="sub-menu">
                             <li id="menu-item-579"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-579"><a
-                                    href="index.html">News &amp; Happenings</a></li>
+                                    href="page.html">News &amp; Happenings</a></li>
                             <li id="menu-item-1229"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1229"><a
-                                    href="index.html">Convergence Science</a>
+                                    href="page.html">Convergence
+                                    Science</a>
                             </li>
                             <li id="menu-item-1206"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1206">
                                 <a href="#">Activities &amp; Events</a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-1266"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1266"><a
-                                            href="index.html">Summer School 2023</a>
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1266">
+                                        <a href="page.html">Summer School 2023</a>
                                     </li>
                                     <li id="menu-item-1211"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1211"><a
-                                            href="index.html">Virtual Consulting Office</a>
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1211">
+                                        <a href="page.html">Virtual Consulting Office</a>
                                     </li>
                                     <li id="menu-item-460"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460"><a
-                                            href="index.html">Webinars</a></li>
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460">
+                                        <a href="page.html">Webinars</a>
+                                    </li>
                                     <li id="menu-item-703"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-703">
                                         <a href="#">All-Hands Meetings</a>
                                         <ul class="sub-menu">
                                             <li id="menu-item-677"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-677">
-                                                <a
-                                                    href="index.html">I-GUIDE
+                                                <a href="page.html">I-GUIDE
                                                     AHM 2022 (Virtual)</a>
                                             </li>
                                             <li id="menu-item-830"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830">
-                                                <a
-                                                    href="index.html">I-GUIDE
+                                                <a href="page.html">I-GUIDE
                                                     AHM 2022 (In-person)</a>
                                             </li>
                                         </ul>
@@ -130,49 +141,53 @@
                                 <ul class="sub-menu">
                                     <li id="menu-item-772"
                                         class="menu-item menu-item-type-post_type menu-item-object-news_events menu-item-772">
-                                        <a href="index.html">AGU
+                                        <a href="page.html">AGU
                                             2022</a>
                                     </li>
                                     <li id="menu-item-1110"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110"><a
-                                            href="index.html">AAG
-                                            2023</a></li>
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110">
+                                        <a href="page.html">AAG
+                                            2023</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li id="menu-item-696"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-696"><a
-                                    href="index.html">Calendar</a></li>
+                                    href="page.html">Calendar</a></li>
                         </ul>
                     </li>
                     <li id="menu-item-1032"
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1032">
-                        <a href="#">Initiatives &amp; Resources<i class="fas fa-sort-down ml-2" aria-hidden="true"></i></a>
+                        <a href="#">Initiatives &amp; Resources<i class="fas fa-sort-down ml-2"
+                                aria-hidden="true"></i></a>
                         <ul class="sub-menu">
                             <li id="menu-item-1030"
-                                class="platform menu-item menu-item-type-post_type menu-item-object-page menu-item-1030"><a
-                                    target="_blank" rel="noopener" href="index.html">I-GUIDE
-                                    Platform</a></li>
+                                class="platform menu-item menu-item-type-post_type menu-item-object-page menu-item-1030">
+                                <a target="_blank" rel="noopener" href="page.html">I-GUIDE
+                                    Platform</a>
+                            </li>
                             <li id="menu-item-1031"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a
-                                    href="index.html">Resources
+                                    href="page.html">Resources
                                     Catalog</a></li>
                             <li id="menu-item-1559"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1559"><a
-                                    href="index.html">Geoethics</a></li>
+                                    href="page.html">Geoethics</a></li>
                             <li id="menu-item-1267"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1267"><a
-                                    href="index.html">Convergence
+                                    href="page.html">Convergence
                                     Curriculum for Geospatial Data Science</a></li>
                         </ul>
                     </li>
-                    <li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205"><a
-                            href="index.html">Contact Us</a></li>
+                    <li id="menu-item-205"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205"><a
+                            href="page.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="page-title w-full block  relative -mt-[200px] pt-[200px]"
-        style="background-image:url('./assets/images/page-bg.png'); background-repeat: no-repeat; background-size: cover;">
+
+    <div class="page-title w-full block  relative -mt-[200px] pt-[200px]" >
         <div class="container mx-auto px-4 h-min-[200px] pb-[80px] pt-12">
             <div class="border-l-8 pl-3 border-ig-orange text-white font-semibold text-2xl">
                 <h1>I-GUIDE VCO: The Convergence Curriculum for Geospatial Data Science: Open Resources for You and your
@@ -187,6 +202,7 @@
             </svg>
         </div>
     </div>
+
     <div class="page-content w-full flex relative bg-white">
         <div class="container mx-auto px-4 py-6">
             <p style="text-align: center;">Date: <strong>Monday, November 14, 2022</strong> Time: <strong>2:00 pm
@@ -224,26 +240,28 @@
             </div>
         </div>
     </div>
-    <footer class="flex py-10 px-20" style="background-image: url('assets/css/footer.png');">
-        <div class="pt-7 mb-0 text-white">
-            <div class="flex">
-                <img src="assets/css/nsf.png" alt="" class="h-[7vw]">
-                <div class="px-5 my-auto">
-                    <h1 class="text-[1.5vw] font-bold text-white">©
-                        <script>document.write(new Date().getFullYear())</script> I-GUIDE All Rights Reserved
-                    </h1>
-                    <p class="z-2 text-white text-[1.1vw] font-light tracking-wide leading-relaxed mt-1">Institute for
-                        Geospatial Understanding through an Integrative Discovery Environment (I-GUIDE) is supported by
-                        the National Science Foundation</p>
+
+    <footer class="flex p-10">
+        <div class="text-white">
+            <div class="flex flex-col content-center md:flex-row justify-evenly">
+                <div class="flex content-center my-auto gap-x-5">
+                    <img src="assets/css/nsf.png" alt="" class="h-[50px] md:h-[7vw]">
+                    <div class="text-xs lg:text-base text-white">
+                        <h1 class="font-bold">©
+                            <script>document.write(new Date().getFullYear())</script> I-GUIDE All Rights Reserved
+                        </h1>
+                        <p class="font-light tracking-wide leading-relaxed mt-1">Institute for
+                            Geospatial Understanding through an Integrative Discovery Environment <br class="hidden md:block lg:hidden"> (I-GUIDE)  <br class="hidden lg:block">  is supported by the National Science Foundation</p>
+                    </div>
                 </div>
-                <div class="px-5 flex my-auto">
-                    <img src="assets/css/yt.png" alt="" class="h-[2vw] px-3">
-                    <img src="assets/css/tw.png" alt="" class="h-[2vw] px-3">
-                    <img src="assets/css/in.png" alt="" class="h-[2vw] px-3">
+                <div class="py-5 flex gap-5 justify-center">
+                    <img src="assets/css/yt.png" alt="" class="object-contain max-w-[30px]">
+                    <img src="assets/css/tw.png" alt="" class="object-contain max-w-[30px]">
+                    <img src="assets/css/in.png" alt="" class="object-contain max-w-[30px]">
                 </div>
             </div>
-            <div class="mt-5 mx-auto text-center w-8/12">
-                <p class="text-sm font-light inline-block">This material is based upon work supported by the National
+            <div class="md:mt-5 mx-auto text-center md:w-9/12">
+                <p class="text-[2.5vw] md:text-[1.1vw] lg:text-sm font-light inline-block">This material is based upon work supported by the National
                     Science Foundation under award No. 2118329. Any opinions, findings, conclusions, or recommendations
                     expressed in this material are those of the author(s) and do not necessarily reflect the views of
                     the National Science Foundation.</p>

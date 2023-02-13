@@ -191,18 +191,6 @@
     @apply text-white;
 }
 
-/* #tabs-nav span#map.active {
-    @apply text-ig-olive bg-white;
-}
-
-#tabs-nav span#connect.active {
-    @apply text-ig-mustard bg-white;
-}
-
-#tabs-nav span#discover.active {
-    @apply text-ig-orange bg-white;
-} */
-
 
 /* Sweep To Right */
 .sweep-to-right {
@@ -252,4 +240,11 @@ footer {
     background-image: url('./footer.png');
     background-size: cover; 
     background-position: center;
+}
+
+.page-title {
+    background-image:url('./BG.png'); 
+    background-repeat: no-repeat; 
+    background-position: center -50px;
+    background-size: cover;
 }
