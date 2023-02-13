@@ -243,3 +243,7 @@
 .sweep-to-right#discover:before {
     @apply bg-ig-orange;
 }
+
+.twitter-timeline {
+    @apply rounded-2xl shadow-lg;
+}

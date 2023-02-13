@@ -192,7 +192,11 @@
 }
 
 #navigation #main-menu>li.menu-item-has-children > a span {
-    @apply md:px-2 lg:pl-5 lg:pr-3;
+    @apply md:px-2 lg:pl-5 lg:pr-3 inline-block ;
+}
+
+#navigation #main-menu>li>ul.sub-menu>li.menu-item-has-children > a span {
+    @apply pl-0 pr-3 inline-block;
 }
 
 @media (max-width: 768px) {

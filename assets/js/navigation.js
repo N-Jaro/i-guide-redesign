@@ -38,8 +38,8 @@ $(function () {
     $('.slicknav_nav').addClass('absolute bg-white w-screen');
 
     // Add the arrows to navigation items
-    $('#navigation #main-menu>li.menu-item-has-children > a').append('<span class="inline-block icon-angle-down"></span>');
-    $('#navigation #main-menu>li>ul.sub-menu>li.menu-item-has-children > a').prepend('<span class="pl-0 pr-3 inline-block icon-angle-left"></span>');
+    $('#navigation #main-menu>li.menu-item-has-children > a').append('<span class="icon-angle-down"></span>');
+    $('#navigation #main-menu>li>ul.sub-menu>li.menu-item-has-children > a').prepend('<span class="icon-angle-left"></span>');
 
 
     // Hide Header on on scroll down
@@ -47,7 +47,7 @@ $(function () {
     var lastScrollTop = 0;
     var delta = 450;
     var navbarHeight = $('#navigation').outerHeight();
-    console.log(navbarHeight);
+    // console.log(navbarHeight);
 
     $(window).scroll(function (event) {
         didScroll = true;
@@ -105,9 +105,9 @@ $(function () {
 
     // Click function
     $('#tabs-nav span').on('click', function(){
-        console.log('test');
+        // console.log('test');
         var clicked = $(this).attr('id');
-        console.log(clicked);
+        // console.log(clicked);
         switch(clicked) {
             case "map" : slideNumber=1 ; break;
             case "connect" : slideNumber=2 ; break;
@@ -132,18 +132,52 @@ $(function () {
 
     // Click function
     $('#project-tabs-nav li').on('click', function(){
-        console.log('test2');
+        // console.log('test2');
         $('#project-tabs-nav li').removeClass('active');
         $(this).addClass('active');
         $('.project-tab-content').hide();
         
         var activeTab = $(this).attr('link');
         $(activeTab).show();
-        $(activeTab).find('.basis-7\\/12').addClass('animate__animated animate__fadeInUp');
-        $(activeTab).find('.basis-5\\/12').addClass('animate__animated animate__fadeInUp');
+        $(activeTab).find('.basis-7\\/12').addClass('animate__animated animate__fadeInLeft');
+        $(activeTab).find('.basis-5\\/12').addClass('animate__animated animate__fadeInRight');
         return false;
     });
 
+    const  sreenMd = window.matchMedia( ' ( min-width: 768px ) ' );
+    var screenSize = $(window).width();
+    function renderTwitter (height) {
+        //Render twitter widget 
+        twttr.widgets.createTimeline(
+            {
+            sourceType: "profile",
+            screenName: "NSFiGUIDE"
+            },
+            document.getElementById("twt-block"),
+            {
+            height: height,
+            chrome: "nofooter",
+            }
+        );
+    };
 
+    // Register event listener
+    sreenMd.addEventListener("change", (e) => {
+        // Check if the media query is true
+        console.log(e);
+        if (e.matches) {
+            $("#twt-block").empty();
+            renderTwitter($('.new-section').outerHeight());
+        } else {
+            $("#twt-block").empty();
+            renderTwitter(400);
+        }
+    });
+
+    if(screenSize > 768 ) {
+        renderTwitter($('.new-section').outerHeight()-100);
+    } else {
+        renderTwitter (400);
+    }
 
 });
