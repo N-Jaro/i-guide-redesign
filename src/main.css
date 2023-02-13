@@ -247,3 +247,9 @@
 .twitter-timeline {
     @apply rounded-2xl shadow-lg;
 }
+
+footer {
+    background-image: url('./footer.png');
+    background-size: cover; 
+    background-position: center;
+}
