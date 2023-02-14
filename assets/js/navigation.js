@@ -34,7 +34,7 @@ $(function () {
     });
 
     $('.slicknav_menu').addClass('md:hidden flex bg-transparent text-black');
-    $('.slicknav_menu').prepend('<div class="grow"><img class="logo-c hidden h-[30px] w-auto" src="./assets/css/logo-color.png"alt=""><img class="logo-w h-[30px] w-auto" src="./assets/css/logo-w.png"alt=""></div>');
+    $('.slicknav_menu').prepend('<div class="grow"><img class="logo-c hidden h-[30px] w-auto" src="./assets/images/logo-color.png"alt=""><img class="logo-w h-[30px] w-auto" src="./assets/images/logo-w.png"alt=""></div>');
     $('.slicknav_nav').addClass('absolute bg-white w-screen');
 
     // Add the arrows to navigation items
