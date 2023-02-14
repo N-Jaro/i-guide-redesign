@@ -1,7 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 // const colors = require('tailwindcss/colors')
 
-module.exports = {
+module.exports = { 
+  darkMode: false,
+  corePlugins: {
+    preflight: false // set preflight to false
+  }, 
+  prefix: 'tw-', // set prefix to 'tw-'
+  important: true, // set important to true
   content: [
     "./*.{html,js}",
     "./asset/**/*.{html,js}"

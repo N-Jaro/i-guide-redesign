@@ -8,11 +8,11 @@
 }
 
 .page-content {
-    @apply tw-font-light tw-text-black;
+    @apply font-light text-black;
 }
 
 .page-content strong {
-    @apply tw-font-semibold;
+    @apply font-semibold;
 }
 
 .page-content h1,
@@ -20,19 +20,19 @@
 .page-content h3,
 .page-content h4,
 .page-content h5 {
-    @apply tw-font-semibold tw-mb-3.5;
+    @apply font-semibold;
 }
 
 .page-content h1 {
-    @apply tw-text-3xl;
+    @apply text-3xl;
 }
 
 .page-content h2 {
-    @apply tw-text-2xl;
+    @apply text-2xl;
 }
 
 .page-content h3 {
-    @apply tw-text-xl;
+    @apply text-xl;
 }
 
 .hero-section {
@@ -43,7 +43,7 @@
 }
 
 .tab-content {
-    @apply tw-h-[500px]
+    @apply h-[500px]
 }
 
 @font-face {
@@ -180,7 +180,7 @@
 /*  ----------------------------------------------------*/
 
 #project-tabs-nav li.active {
-    @apply tw-border-b-4 tw-border-ig-orange tw-text-ig-orange
+    @apply border-b-4 border-ig-orange text-ig-orange
 }
 
 :root {
@@ -188,7 +188,7 @@
 }
 
 #tabs-nav span {
-    @apply tw-text-white;
+    @apply text-white;
 }
 
 
@@ -221,19 +221,19 @@
     transform: scaleX(1);
 }
 .sweep-to-right#map:before {
-    @apply tw-bg-ig-olive;
+    @apply bg-ig-olive;
 }
 
 .sweep-to-right#connect:before {
-    @apply tw-bg-ig-mustard;
+    @apply bg-ig-mustard;
 }
 
 .sweep-to-right#discover:before {
-    @apply tw-bg-ig-orange;
+    @apply bg-ig-orange;
 }
 
 .twitter-timeline {
-    @apply tw-rounded-2xl tw-shadow-lg;
+    @apply rounded-2xl shadow-lg;
 }
 
 footer {

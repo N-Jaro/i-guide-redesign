@@ -1,9 +1,59 @@
-.mobileLogoWrap {
-    @apply tw-grow;
+.-mt-\[200px\] {
+    margin-top: -200px;
 }
-.mobilLogo {
-    @apply tw-h-[30px] tw-w-auto;
+
+.h-\[120px\] {
+    height: 120px;
 }
+
+.h-\[56px\] {
+    height: 56px;
+}
+
+.h-\[300px\] {
+    height: 300px;
+}
+
+.h-\[30px\] {
+    height: 30px;
+}
+
+.w-\[115px\] {
+    width: 115px;
+}
+
+.space-x-4> :not([hidden])~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.border-l-8 {
+    border-left-width: 8px;
+}
+
+.border-ig-orange {
+    --tw-border-opacity: 1;
+    border-color: rgb(241 129 73 / var(--tw-border-opacity));
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.pt-\[200px\] {
+    padding-top: 200px;
+}
+
+.pb-\[80px\] {
+    padding-bottom: 80px;
+}
+
 .slicknav_menu {
     padding: 0 !important;
     z-index: 1000;
@@ -24,41 +74,36 @@
     color: black !important;
 }
 .slicknav_menu .logo-c,
-.slicknav_menu .logo-w 
-{
-    @apply  tw-mx-7 tw-my-5;
+.slicknav_menu .logo-w {
+    @apply  mx-7 my-5;
 }
 
 .slicknav_nav {
     top: 100%;
     @apply tw-absolute tw-bg-white tw-w-screen;
 }
-.scrolledDown {
-    @apply tw-bg-transparent tw-text-white;
-}
-.scrolledUp {
-    @apply tw-bg-white tw-text-black tw-shadow-xl;
-}
+
 .nav-down {
     position: sticky;
 }
+
 .nav-up {
     top: -170px !important;
 }
 
-.scrolledDown #desktop-menu .logo-color {
+.text-white #desktop-menu .logo-color {
     display: none !important;
 }
 
-.scrolledDown #desktop-menu .logo-white {
+.text-white #desktop-menu .logo-white {
     display: block !important;
 }
 
-.scrolledUp #desktop-menu .logo-color {
+.text-black #desktop-menu .logo-color {
     display: block !important;
 }
 
-.scrolledUp #desktop-menu .logo-white {
+.text-black #desktop-menu .logo-white {
     display: none !important;
 }
 
@@ -149,11 +194,11 @@
 }
 
 #navigation #main-menu>li.menu-item-has-children > a span {
-    @apply md:tw-px-2 lg:tw-pl-5 lg:tw-pr-3 tw-inline-block ;
+    @apply md:px-2 lg:pl-5 lg:pr-3 inline-block ;
 }
 
 #navigation #main-menu>li>ul.sub-menu>li.menu-item-has-children > a span {
-    @apply tw-pl-0 tw-pr-3 tw-inline-block;
+    @apply pl-0 pr-3 inline-block;
 }
 
 @media (max-width: 768px) {
@@ -168,5 +213,16 @@
 
     .nav .menu-item-has-children ul.sub-menu {
         text-align: center;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .xl\:h-\[80px\] {
+        height: 80px;
+    }
+
+    .xl\:w-\[165px\] {
+        width: 165px;
     }
 }

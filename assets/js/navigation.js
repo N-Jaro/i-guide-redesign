@@ -7,6 +7,12 @@ $(function () {
         closedSymbol: '<span class="icon-chevron-right"></span>',
         openedSymbol: '<span class="icon-chevron-down"></span>',
         init: function(){
+            
+            $('.slicknav_menu').prepend('<div class="mobileLogoWrap"><img class="logo-c mobilLogo" src="./assets/images/logo-color.png"alt=""><img class="mobilLogo logo-w" src="./assets/images/logo-w.png"alt=""></div>');
+            // Add the arrows to navigation items
+            $('#navigation #main-menu>li.menu-item-has-children > a').append('<span class="icon-angle-down"></span>');
+            $('#navigation #main-menu>li>ul.sub-menu>li.menu-item-has-children > a').prepend('<span class="icon-angle-left"></span>');
+
             $('.slicknav_menu').addClass('close');
             $('.slicknav_menu').css('background-color','transparent');
             $('.logo-c').css('display','none');
@@ -33,13 +39,6 @@ $(function () {
         }
     });
 
-    $('.slicknav_menu').addClass('md:hidden flex bg-transparent text-black');
-    $('.slicknav_menu').prepend('<div class="grow"><img class="logo-c hidden h-[30px] w-auto" src="./assets/images/logo-color.png"alt=""><img class="logo-w h-[30px] w-auto" src="./assets/images/logo-w.png"alt=""></div>');
-    $('.slicknav_nav').addClass('absolute bg-white w-screen');
-
-    // Add the arrows to navigation items
-    $('#navigation #main-menu>li.menu-item-has-children > a').append('<span class="icon-angle-down"></span>');
-    $('#navigation #main-menu>li>ul.sub-menu>li.menu-item-has-children > a').prepend('<span class="icon-angle-left"></span>');
 
 
     // Hide Header on on scroll down
@@ -66,9 +65,9 @@ $(function () {
         // Make sure they scroll more than delta
         // console.log(lastScrollTop, st, Math.abs(lastScrollTop - st), delta)
         if (st < 10) {
-            $('#navigation').addClass('bg-transparent text-white').removeClass('bg-white text-black shadow-xl');
+            $('#navigation').addClass('scrolledDown').removeClass('scrolledUp');
         } else if (st > 0 && st < 400) {
-            $('#navigation').addClass('bg-white text-black shadow-xl').removeClass('bg-transparent text-white');
+            $('#navigation').addClass('scrolledUp').removeClass('scrolledDown');
         }
 
         if (Math.abs(lastScrollTop - st) <= delta) {
@@ -105,9 +104,7 @@ $(function () {
 
     // Click function
     $('#tabs-nav span').on('click', function(){
-        // console.log('test');
         var clicked = $(this).attr('id');
-        // console.log(clicked);
         switch(clicked) {
             case "map" : slideNumber=1 ; break;
             case "connect" : slideNumber=2 ; break;
