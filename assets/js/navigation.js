@@ -139,8 +139,8 @@ $(function () {
         
         var activeTab = $(this).attr('link');
         $(activeTab).show();
-        $(activeTab).find('.basis-7\\/12').addClass('animate__animated animate__fadeInLeft');
-        $(activeTab).find('.basis-5\\/12').addClass('animate__animated animate__fadeInRight');
+        $(activeTab).find('.projLeft').addClass('animate__animated animate__fadeInLeft');
+        $(activeTab).find('.projRight').addClass('animate__animated animate__fadeInRight');
         return false;
     });
 
